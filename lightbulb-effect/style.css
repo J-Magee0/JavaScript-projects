@@ -9,23 +9,35 @@
 }
 
 .canvas {
-  width: 600px;
-  height: 500px;
-  margin: 50px auto;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
   text-align: center;
   box-sizing: border-box;
   transition: background 0.4s ease;
+  display: flex;
+  flex-direction: column; /* stack children vertically */
+  justify-content: center; /* center vertically */
+  align-items: center; /* center horizontally */
+  gap: 40px; /* space between the text and bulb */
 }
 
 /*Dark mode background*/
 .canvas.dark {
   background: radial-gradient(circle, #222 0%, #111 70%);
+  color: aliceblue;
+}
+
+.canvas-text {
+  margin: 0; /* remove default margins */
+  padding: 0;
 }
 
 .bulb {
   width: 256px;
   height: 400px;
-  margin: auto;
+  /* removed margin:auto since flex handles centering */
+  padding: 0;
   background: url(./assets/lightoff.png) no-repeat;
   transition: all 0.4s ease;
 }
