@@ -6,16 +6,16 @@
   box-sizing: border-box;
 }
 
-.bulb-off {
-  width: 256px;
-  height: 400px;
-  background: url("lightoff.png") no-repeat;
-  margin: auto;
-}
-
 .bulb {
   width: 256px;
   height: 400px;
-  background: url("lighton.png") no-repeat;
   margin: auto;
+}
+
+.bulb-off {
+  background: url(./assets/lightoff.png) no-repeat;
+}
+
+.bulb-on {
+  background: url(./assets/lighton.png) no-repeat;
 }
