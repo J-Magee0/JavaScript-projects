@@ -1,21 +1,36 @@
+/*Glow effect*/
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 10px rgba(255, 223, 0, 0.4));
+  }
+  to {
+    filter: drop-shadow(0 0 40px rgba(255, 223, 0, 0.9));
+  }
+}
+
 .canvas {
   width: 600px;
   height: 500px;
   margin: 50px auto;
   text-align: center;
   box-sizing: border-box;
+  transition: background 0.4s ease;
+}
+
+/*Dark mode background*/
+.canvas.dark {
+  background: radial-gradient(circle, #222 0%, #111 70%);
 }
 
 .bulb {
   width: 256px;
   height: 400px;
   margin: auto;
-}
-
-.bulb-off {
   background: url(./assets/lightoff.png) no-repeat;
+  transition: all 0.4s ease;
 }
 
-.bulb-on {
+.bulb.is-on {
   background: url(./assets/lighton.png) no-repeat;
+  animation: glow 1.5 ease-in-out infinite alternate;
 }
