@@ -1,17 +1,17 @@
 const insert = document.getElementById("insert");
 
-window.addEventListener("keydown", (e) => {
+window.addEventListener("keydown", (event) => {
   insert.innerHTML = `
   <div class="key"> 
-    ${e.key === " " ? "Space" : e.key}
+    ${event.key === " " ? "Space" : event.key}
     <small>event.key</small>
   </div>
   <div class="key red"> 
-    ${e.keyCode}
+    ${event.keyCode}
     <small>event.keyCode (old)</small>
   </div>
   <div class="key green"> 
-    ${e.code}
+    ${event.code}
     <small>event.code (new)</small>
   </div>`;
 });
