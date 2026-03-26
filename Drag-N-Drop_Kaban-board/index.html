@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drag-N-Drop Kaban Board</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">Kaban Board</header>
+      <main class="content">
+        <div class="input_container">
+          <input
+            type="text"
+            class="input"
+            id="input"
+            placeholder="Input your tasks here"
+          />
+          <select id="progress" class="progress">
+            <option value="todo" default>--To Do--</option>
+            <option value="inProgress">--In Progress--</option>
+            <option value="done">--Done--</option>
+          </select>
+          <button class="addBtn" id="addBtn">Add</button>
+        </div>
+        <section class="cards">
+          <div class="card">
+            <div class="card_title todo">--To do--</div>
+            <div class="card_content">
+              <div class="card_tab">
+                <div class="tabText">
+                  Task todo
+                  <button class="begin" id="begin">Begin</button>
+                  <button class="done" id="done">Done</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_title inProgress">--In Progress--</div>
+            <div class="card_content">
+              <div class="card_tab">
+                <div class="tabText">
+                  Task todo
+                  <button class="done" id="done">Done</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_title done">Done</div>
+            <div class="card_content">
+              <div class="card_tab">
+                <div class="tabText">Task todo</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
