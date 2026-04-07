@@ -37,11 +37,11 @@ Tasks can be picked up and dropped into different sections, updating their posit
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 To run the project locally:
 
-### 1. Clone the repo
+ Clone the repo
 
 ```bash
 git clone https://github.com/J-Magee0/JavaScript-projects/tree/main/Drag-N-Drop_Kaban-board
